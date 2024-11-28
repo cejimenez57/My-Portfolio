@@ -2,35 +2,52 @@
     margin-top: 2rem;
     display: flex;
     flex-direction: column;
-    gap: 10px;
-    width: 100%;
-    align-items: center;
+    align-items: flex-start;
+    // gap: 10px;
+    // width: 100%;
+    padding: 0;
+    margin: 0;
+
+    a:hover {
+        color: #1da1f2;
+    }
+
+    a::after {
+        content: "";
+        position: absolute;
+        left: 0;
+        bottom: -2px;
+        width: 0%;
+        height: 2px;
+        background-color: #1da1f2;
+        transition: width 0.3s ease;
+    }
+
+    a:hover::after {
+        width: 100%;
+    }
+
+    a {
+        display: flex;
+        align-items: left;
+        text-decoration: none;
+        color: #333;
+        font-size: 1rem;
+        margin: 0.5rem 0;
+        color: white;
+        text-decoration: none;
+        font-size: 18px;
+        padding: 8px;
+
+        // text-align: center;
+        // width: 100%;
+    }
 }
 
-.nav-links a {
-    color: white;
-    text-decoration: none;
-    font-size: 18px;
-    padding: 8px;
-    text-align: center;
-    width: 100%;
-}
 
-.nav-links a:hover {
-    color: #1da1f2;
-}
-
-.nav-links a::after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: -2px;
-    width: 0%;
-    height: 2px;
-    background-color: #1da1f2;
-    transition: width 0.3s ease;
-}
-
-.nav-links a:hover::after {
-    width: 100%;
+.nav-links .nav-icon {
+    margin-right: 0.5rem;
+    width: 20px;
+    height: 20px;
+    filter: brightness(0) saturate(100%) invert(50%) sepia(100%) hue-rotate(90deg);
 }

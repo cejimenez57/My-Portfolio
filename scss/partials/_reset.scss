@@ -9,9 +9,11 @@ body {
     padding: 0;
     height: 100%;
     font-family: Arial, sans-serif;
+    overflow: auto;
 }
 
 html {
     scroll-behavior: smooth;
     height: 100%;
+    overflow: auto;
 }

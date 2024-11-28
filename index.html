@@ -32,47 +32,88 @@
 
         <!-- Navigation Links -->
         <div class="nav-links">
-            <a href="javascript:void(0)" id="about-link">About</a>
-            <a href="javascript:void(0)" id="certifications-link">Certifications</a>
-            <a href="javascript:void(0)" id="projects-link">Projects</a>
-            <a href="javascript:void(0)" id="contact-link">Contact</a>
+            <a href="javascript:void(0)" id="about-link">
+                <img src="/svg/about.svg" alt="About" class="nav-icon">
+                About
+            </a>
+            <a href="javascript:void(0)" id="certifications-link">
+                <img src="/svg/certs.svg" alt="Certifications" class="nav-icon">
+                Certifications
+            </a>
+            <a href="javascript:void(0)" id="projects-link">
+                <img src="/svg/projects.svg" alt="Projects" class="nav-icon">
+                Projects
+            </a>
+            <a href="javascript:void(0)" id="contact-link">
+                <img src="/svg/contact.svg" alt="Contact" class="nav-icon">
+                Contact
+            </a>
         </div>
+
     </div>
     <!-- Main Contet -->
     <div class="main-content">
         <!-- Section about me -->
         <section id="about-me" class="section active">
             <h2>About Me</h2>
-            <p>
-                Hi, I’m <span class="highlight-name">Christian</span>! My journey in IT began in college, where I
-                developed coding skills and participated
-                in hackathons that challenged me to think creatively and solve problems. Over time, I expanded my
-                expertise
-                to include troubleshooting both hardware and software, earning my CompTIA A+ certification and Google IT
-                Certificate to solidify my technical foundation. I’ve also worked as a Help Desk Support Technician,
-                where I honed my customer service skills and deepened my technical knowledge by resolving a wide range
-                of user issues.
-            </p>
-            <p>
-                Now, I’m diving into the world of cybersecurity. I’m studying for the Security+ certification, working
-                toward a Bachelor’s in Cybersecurity at Western Governors University, and participating in the
-                self-paced Hack The Box SOC program, where I’m learning about cyber defense and how to think like a
-                Security
-                Operations Center (SOC) analyst.
-            </p>
-            <p>
-                I’m passionate about continuous learning and bringing a well-rounded technical approach to solving
-                complex challenges in the IT and cybersecurity fields.
-            </p>
-
-
+            <p> Hi, my name is <span class="highlight-name">Christian</span>! I started my journey in tech with a focus
+                on Software Engineering, where I developed coding skills and participated in hackathons that challenged
+                me to think creatively and solve problems. While I enjoyed software development, I discovered a passion
+                for troubleshooting and problem-solving that led me to transition into the IT field. </p>
+            <p> In IT, I’ve worked as a Help Desk Support Technician, where I gained hands-on experience resolving
+                technical issues and delivering excellent customer service. Along the way, I earned certifications like
+                the CompTIA A+ and Google IT Certificate, solidifying my technical foundation and deepening my expertise
+                in hardware and software troubleshooting. </p>
+            <p> Now, I’m on a path to specialize in cybersecurity, working to combine my background in software and IT
+                with advanced skills in cyber defense. I’m currently studying for the Security+ certification, pursuing
+                a Bachelor's in Cybersecurity at Western Governors University, and participating in the Hack The Box SOC
+                program to gain practical experience as a Security Operations Center (SOC) analyst. </p>
+            <p> I built this website as a fun and creative way to showcase my certifications, degree, projects, and
+                contact information. It reflects my journey so far and the exciting challenges ahead in the
+                cybersecurity field! </p>
             <button id="downloadResume" class="download-btn">
                 <img src="/svg/download-icon.svg" alt="Download Icon" class="svg-icon" />Download Resume</button>
         </section>
+
+        <!-- Certification Section -->
         <section id="certifications" class="section">
-            <h2>Certifications</h2>
-            <p>This is the certifications section.</p>
+            <h2 class="certification-title">Certifications & Education</h2>
+            <div class="certification-container">
+                <div class="certification-item">
+                    <div class="cert-card" data-pdf="/pdfs/comptia-a-plus.pdf">
+                        <img src="/images/Aplus Logo Certified CE.jpg" alt="CompTIA A+ Certification">
+                        <h3>CompTIA A+ Certification</h3>
+                        <p>Issued by Comptia</p>
+                    </div>
+                </div>
+
+                <div class="certification-item">
+                    <div class="cert-card" data-pdf="/pdfs/security-plus.pdf">
+                        <img src="/images/Google_IT.jpg" alt="Google Certificate">
+                        <h3>Google IT Certificate</h3>
+                        <p>Issued by Google</p>
+                    </div>
+                </div>
+
+                <div class="certification-item">
+                    <div class="cert-card" data-pdf="/pdfs/wgu-degree.pdf">
+                        <img src="/images/diploma.jpg" alt="associates-degree">
+                        <h3>Associates Degree in Computer Science</h3>
+                        <p>Issued By: Dallas College</p>
+                    </div>
+                </div>
+            </div>
         </section>
+
+        <!-- Modal Structure -->
+        <div id="pdf-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-btn">&times;</span>
+                <iframe id="pdf-viewer" src="" frameborder="0"></iframe>
+            </div>
+        </div>
+
+
 
         <section id="projects" class="section">
             <h2>Projects</h2>
