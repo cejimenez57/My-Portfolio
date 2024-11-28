@@ -1,16 +1,14 @@
-# Ignore assets folder containing images and PDFs
-/assets/
+# Ignore folders
+/resume/
+/svg/
+/images/
 
-# Ignore all .pdf files
-*.pdf
+# Ignore .svg files
+*.svg
 
-# Ignore image files
+# Ignore .jpg files
 *.jpg
-*.png
 
-# Ignore node_modules directory
-node_modules/
-
-# Ignore environment variables file
-.env
+# Ignore .pdf files
+*.pdf
 
